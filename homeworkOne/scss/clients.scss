@@ -1,0 +1,234 @@
+.section-three {
+  height: 110%;
+  .clients-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    hr {
+      width: 45%;
+      margin: 5px;
+    }
+
+    h1 {
+      margin: auto 20px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+
+  .client-logos {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .last-row {
+    width: 44.5%;
+  }
+
+  .logo-row {
+    //background-color: lightsalmon;
+    margin: 25px;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+      height: 188px;
+      width: 188px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info {
+      display: none;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+
+    .logo1 {
+      background-image: url('../img/57Hours_logo.jpg');
+    }
+
+    .logo1:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/57Hours_logo.jpg');
+    }
+
+    .logo2 {
+      background-image: url('../img/logo2.jpg');
+    }
+
+    .logo2:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo2.jpg');
+    }
+
+    .logo3 {
+      background-image: url('../img/logo3.jpg');
+    }
+
+    .logo3:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo3.jpg');
+    }
+
+    .logo4 {
+      background-image: url('../img/logo4.jpg');
+    }
+
+    .logo4:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo4.jpg');
+    }
+
+    .logo5 {
+      background-image: url('../img/logo5.jpg');
+    }
+
+    .logo5:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo5.jpg');
+    }
+
+    .logo6 {
+      background-image: url('../img/logo6.jpg');
+    }
+
+    .logo6:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo6.jpg');
+    }
+
+    .logo7 {
+      background-image: url('../img/logo7.jpg');
+    }
+
+    .logo7:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo7.jpg');
+    }
+
+    .logo8 {
+      background-image: url('../img/logo8.jpg');
+    }
+
+    .logo8:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo8.jpg');
+    }
+
+    .logo9 {
+      background-image: url('../img/logo9.jpg');
+    }
+
+    .logo9:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo9.jpg');
+    }
+
+    .logo10 {
+      background-image: url('../img/logo10.jpg');
+    }
+
+    .logo10:hover {
+      background-image: linear-gradient(
+          to right,
+          rgba($black, 0.7),
+          rgba($black, 0.7)
+        ),
+        url('../img/logo10.jpg');
+    }
+
+    .logo:hover .info {
+      display: block;
+    }
+  }
+}
+
+.section-four {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 50px 20px 10px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  p {
+    width: 72%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  img {
+    margin: 10px;
+  }
+
+  h2 {
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 130%;
+  }
+
+  h3 {
+    position: relative;
+    left: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: right;
+  }
+}

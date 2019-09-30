@@ -1,0 +1,17 @@
+@mixin rightTriangle {
+  position: absolute;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-top: 40px solid $orange;
+}
+
+@mixin leftTriangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-right: 40px solid transparent;
+  border-top: 40px solid $orange;
+  margin-left: -25px;
+}

@@ -1,0 +1,27 @@
+.home {
+  height: 125%;
+
+  .header-image {
+    height: 470px;
+    background-image: url(../img/real_header.jpg);
+    background-color: coral;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .callout {
+    margin-top: 60px;
+    margin-bottom: 90px;
+    padding-left: 20px;
+    h1 {
+      font-style: normal;
+      font-size: 65px;
+      font-weight: 100;
+      font-family: $font-didot;
+    }
+    h2 {
+      font-size: 325%;
+      font-weight: bold;
+    }
+  }
+}

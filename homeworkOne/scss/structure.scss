@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#fonts {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-family: $font-didot;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $font-didot;
+}
+
+.site-content {
+  margin-left: 400px;
+  width: 970px;
+  position: relative;
+  //background-color: bisque;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.section-content {
+  padding: 20px;
+  h1 {
+    margin-top: 15px;
+    font-family: $font-didot;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 75px;
+  }
+
+  p {
+    font-family: $font-montserrat;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.img-break {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.number {
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.black-divider-line-small {
+  background-color: black;
+  width: 13%;
+  height: 2px;
+  margin: 0 auto 0 50%;
+}
+
+.right-triangle {
+  @include rightTriangle;
+}
+
+.left-triangle {
+  @include leftTriangle;
+}
