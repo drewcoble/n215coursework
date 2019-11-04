@@ -17,6 +17,9 @@
       justify-content: center;
       text-align: center;
       color: $site-white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
       .tour-title-wrap {
         .tour-title {
@@ -55,9 +58,6 @@
           rgba($site-black, 0.5)
         ),
         url('../images/tour/tour-01.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
     .usa {
       background-image: linear-gradient(
@@ -66,9 +66,6 @@
           rgba($site-black, 0.5)
         ),
         url('../images/tour/tour-02.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
     .australia {
       background-image: linear-gradient(
@@ -77,9 +74,6 @@
           rgba($site-black, 0.5)
         ),
         url('../images/tour/tour-03.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
   }
 
@@ -150,7 +144,7 @@
         width: 100%;
         margin-right: 10px;
         padding-left: 15px;
-        font-family: 'Arial', serif;
+        font-family: $font-roboto;
         font-size: 18px;
         font-weight: 100;
 
@@ -178,7 +172,7 @@
 
       .long-text {
         width: 100%;
-        font-family: 'Arial', serif;
+        font-family: $font-roboto;
         font-size: 18px;
         display: flex;
         text-align: top;
@@ -217,7 +211,7 @@
       margin-bottom: 5px;
 
       .tour {
-        width: 80%;
+        width: 304px;
         height: 236px;
         margin-bottom: 15px;
 
@@ -272,7 +266,7 @@
       }
 
       h1 {
-        //font-size: 16px;
+        font-size: 42px;
         font-weight: 100;
       }
       .form-row {
@@ -298,7 +292,6 @@
           width: 100%;
           height: 58px;
           padding-left: 15px;
-          font-family: 'Arial', serif;
           font-size: 18px;
           font-weight: 100;
 

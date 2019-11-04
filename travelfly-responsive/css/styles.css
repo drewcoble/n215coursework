@@ -108,7 +108,10 @@ p {
       -ms-flex-pack: center;
       justify-content: center;
       text-align: center;
-      color: #ffffff; }
+      color: #ffffff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
       .home-content .home-tours-container .tour .tour-title-wrap .tour-title {
         text-transform: uppercase;
         font-size: 40px;
@@ -141,26 +144,17 @@ p {
       background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-01.jpg");
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg"); }
     .home-content .home-tours-container .usa {
       background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-02.jpg");
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg"); }
     .home-content .home-tours-container .australia {
       background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-03.jpg");
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg"); }
   .home-content .home-form {
     min-height: 780px;
     width: 100%;
@@ -248,7 +242,7 @@ p {
         width: 100%;
         margin-right: 10px;
         padding-left: 15px;
-        font-family: 'Arial', serif;
+        font-family: "Roboto", sans-serif;
         font-size: 18px;
         font-weight: 100; }
         .home-content .home-form .form-row .text-input::-webkit-input-placeholder {
@@ -278,7 +272,7 @@ p {
       height: 192px; }
       .home-content .home-form .long-textbox .long-text {
         width: 100%;
-        font-family: 'Arial', serif;
+        font-family: "Roboto", sans-serif;
         font-size: 18px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -316,7 +310,7 @@ p {
     margin-top: 15px;
     margin-bottom: 5px; }
     .home-content .home-tours-container .tour {
-      width: 80%;
+      width: 304px;
       height: 236px;
       margin-bottom: 15px; }
   .home-content .home-form {
@@ -360,6 +354,7 @@ p {
           text-align: center;
           width: 80px; }
     .home-content .home-form h1 {
+      font-size: 42px;
       font-weight: 100; }
     .home-content .home-form .form-row {
       width: 100%;
@@ -392,7 +387,6 @@ p {
         width: 100%;
         height: 58px;
         padding-left: 15px;
-        font-family: 'Arial', serif;
         font-size: 18px;
         font-weight: 100; }
         .home-content .home-form .form-row .text-input::-webkit-input-placeholder {
