@@ -29,6 +29,10 @@
       i {
         font-size: 23px;
         color: white;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

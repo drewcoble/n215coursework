@@ -135,6 +135,8 @@ p {
         border-radius: 20px;
         text-transform: uppercase;
         font-size: 15px; }
+        .home-content .home-tours-container .tour .tour-button:hover {
+          cursor: pointer; }
     .home-content .home-tours-container .israel {
       background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-01.jpg");
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
@@ -293,9 +295,11 @@ p {
       color: #ffffff;
       text-transform: uppercase;
       border-radius: 30px; }
+      .home-content .home-form .submit-button:hover {
+        cursor: pointer; }
 
 @media (max-width: 840px) {
-  .home-tours-container {
+  .home-content .home-tours-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,16 +312,14 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
-    .home-tours-container .tour {
-      width: 304px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 5px; }
+    .home-content .home-tours-container .tour {
+      width: 80%;
       height: 236px;
-      margin-bottom: 10px;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row; }
-  .home-form {
+      margin-bottom: 15px; }
+  .home-content .home-form {
     margin: 0px auto 100px;
     width: 100%;
     display: -webkit-box;
@@ -330,23 +332,20 @@ p {
     font-size: 18px;
     font-weight: 100;
     padding: 0px 20px; }
-    .home-form .dropdown-container {
+    .home-content .home-form .dropdown-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .home-form .dropdown-container .dropdown {
+      justify-content: space-around; }
+      .home-content .home-form .dropdown-container .dropdown {
         max-width: 222px;
         height: 58px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin: 10px 0px; }
-        .home-form .dropdown-container .dropdown .input-label {
+        .home-content .home-form .dropdown-container .dropdown .input-label {
           height: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -360,10 +359,9 @@ p {
           margin-top: -15px;
           text-align: center;
           width: 80px; }
-    .home-form h1 {
-      font-size: 16px;
+    .home-content .home-form h1 {
       font-weight: 100; }
-    .home-form .form-row {
+    .home-content .home-form .form-row {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -379,7 +377,7 @@ p {
       margin-bottom: 0px;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      .home-form .form-row .input-label {
+      .home-content .home-form .form-row .input-label {
         min-width: 120px;
         margin-bottom: 5px;
         display: -webkit-box;
@@ -388,7 +386,7 @@ p {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-      .home-form .form-row .text-input {
+      .home-content .home-form .form-row .text-input {
         margin-bottom: 20px;
         border: 1px solid #79addc;
         width: 100%;
@@ -397,32 +395,32 @@ p {
         font-family: 'Arial', serif;
         font-size: 18px;
         font-weight: 100; }
-        .home-form .form-row .text-input::-webkit-input-placeholder {
+        .home-content .home-form .form-row .text-input::-webkit-input-placeholder {
           color: #000000;
           font-weight: 100; }
-        .home-form .form-row .text-input:-ms-input-placeholder {
+        .home-content .home-form .form-row .text-input:-ms-input-placeholder {
           color: #000000;
           font-weight: 100; }
-        .home-form .form-row .text-input::-ms-input-placeholder {
+        .home-content .home-form .form-row .text-input::-ms-input-placeholder {
           color: #000000;
           font-weight: 100; }
-        .home-form .form-row .text-input::placeholder {
+        .home-content .home-form .form-row .text-input::placeholder {
           color: #000000;
           font-weight: 100; }
-      .home-form .form-row .input-w-logo {
+      .home-content .home-form .form-row .input-w-logo {
         min-width: 10px;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin-bottom: 20px; }
-        .home-form .form-row .input-w-logo img {
+        .home-content .home-form .form-row .input-w-logo img {
           height: 19px;
           margin-top: 19.5px;
           margin-left: -40px; }
-    .home-form .long-textbox {
+    .home-content .home-form .long-textbox {
       height: 192px; }
-      .home-form .long-textbox .long-text {
+      .home-content .home-form .long-textbox .long-text {
         height: 100%;
         width: 100%;
         font-family: "Roboto", sans-serif;
@@ -432,7 +430,7 @@ p {
         display: flex;
         text-align: top;
         padding-top: 20px; }
-    .home-form .submit-button {
+    .home-content .home-form .submit-button {
       width: 100%;
       margin: 15px 0px;
       height: 60px;
@@ -554,6 +552,8 @@ nav {
       .footer .footer-content .social-links i {
         font-size: 23px;
         color: white; }
+        .footer .footer-content .social-links i:hover {
+          cursor: pointer; }
 
 @media (max-width: 840px) {
   .footer {
