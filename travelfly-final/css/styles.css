@@ -647,7 +647,9 @@ p {
         width: 64px; } }
 
 .about-section {
-  width: 100%; }
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; }
   .about-section .about-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -659,7 +661,7 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     height: 100%; }
     .about-section .about-top .about-main {
@@ -692,8 +694,7 @@ p {
         font-size: 16px;
         margin: 25px 0 45px; }
   .about-section .about-body {
-    max-width: 80%;
-    margin: 0 auto;
+    width: 80%;
     margin: 0 auto;
     margin: 0 auto 50px;
     display: -webkit-box;
