@@ -1,0 +1,344 @@
+.home-content {
+  @include center-content(818px);
+
+  .home-tours-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+    .tour {
+      width: 236px;
+      height: 304px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: $site-white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .tour-title-wrap {
+        .tour-title {
+          text-transform: uppercase;
+          font-size: 40px;
+          font-weight: 100;
+          margin-bottom: 0px;
+          font-family: $font-roboto;
+        }
+        .tour-subtitle {
+          font-size: 25px;
+          margin-bottom: 50px;
+          font-family: $font-roboto;
+        }
+      }
+      .tour-button {
+        height: 40px;
+        width: 133px;
+        background-color: $site-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .israel {
+      background-image: linear-gradient(
+          to right,
+          rgba($site-black, 0.5),
+          rgba($site-black, 0.5)
+        ),
+        url('../images/tour/tour-01.jpg');
+    }
+    .usa {
+      background-image: linear-gradient(
+          to right,
+          rgba($site-black, 0.5),
+          rgba($site-black, 0.5)
+        ),
+        url('../images/tour/tour-02.jpg');
+    }
+    .australia {
+      background-image: linear-gradient(
+          to right,
+          rgba($site-black, 0.5),
+          rgba($site-black, 0.5)
+        ),
+        url('../images/tour/tour-03.jpg');
+    }
+  }
+
+  .home-form {
+    //background-color: darkslateblue;
+    min-height: 780px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 100;
+
+    .dropdown-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dropdown {
+        width: 222px;
+        height: 58px;
+        //background-color: slategray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .input-label {
+          display: flex;
+          align-items: center;
+          min-width: 120px;
+        }
+
+        select {
+          width: 103px;
+          height: 100%;
+          background: url('../images/down-arrow.svg');
+          background-size: 20px;
+          background-repeat: no-repeat;
+          background-position: right;
+          background-position-x: 65px;
+          appearance: none;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: 100;
+    }
+    .form-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 58px;
+      //background-color: slateblue;
+
+      .input-label {
+        width: 120px;
+        display: flex;
+        align-items: center;
+      }
+
+      .text-input {
+        border: 1px solid $site-blue;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 15px;
+        font-family: $font-roboto;
+        font-size: 18px;
+        font-weight: 100;
+
+        &::placeholder {
+          color: $site-black;
+          font-weight: 100;
+        }
+      }
+
+      .input-w-logo {
+        width: 100%;
+        height: 58px;
+        display: flex;
+        margin-right: 10px;
+
+        img {
+          height: 19px;
+          margin-top: 19.5px;
+          margin-left: -40px;
+        }
+      }
+    }
+    .long-textbox {
+      height: 192px;
+
+      .long-text {
+        width: 100%;
+        font-family: $font-roboto;
+        font-size: 18px;
+        display: flex;
+        text-align: top;
+        padding-top: 20px;
+      }
+    }
+
+    .submit-button {
+      width: 100%;
+      margin-top: 15px;
+      height: 60px;
+      background-color: $site-blue;
+      border: none;
+      font-size: 15px;
+      color: $site-white;
+      text-transform: uppercase;
+      border-radius: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .home-content {
+    .home-tours-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      //background-color: slateblue;
+      margin-top: 15px;
+      margin-bottom: 5px;
+
+      .tour {
+        width: 304px;
+        height: 236px;
+        margin-bottom: 15px;
+
+        .tour-title-wrap {
+          .tour-title {
+          }
+          .tour-subtitle {
+          }
+        }
+        .tour-button {
+        }
+      }
+    }
+
+    .home-form {
+      //background-color: darkslateblue;
+      margin: 0px auto 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      font-size: 18px;
+      font-weight: 100;
+      padding: 0px 20px;
+
+      .dropdown-container {
+        display: flex;
+        justify-content: space-around;
+        //align-items: center;
+
+        .dropdown {
+          max-width: 222px;
+          height: 58px;
+          //background-color: slategray;
+          display: flex;
+          margin: 10px 0px;
+
+          .input-label {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -15px;
+            //background-color: sandybrown;
+            text-align: center;
+            width: 80px;
+          }
+
+          select {
+          }
+        }
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 100;
+      }
+      .form-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 58px;
+        margin-bottom: 0px;
+        //background-color: slateblue;
+        flex-wrap: wrap;
+
+        .input-label {
+          min-width: 120px;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+        }
+
+        .text-input {
+          margin-bottom: 20px;
+          border: 1px solid $site-blue;
+          width: 100%;
+          height: 58px;
+          padding-left: 15px;
+          font-size: 18px;
+          font-weight: 100;
+
+          &::placeholder {
+            color: $site-black;
+            font-weight: 100;
+          }
+        }
+
+        .input-w-logo {
+          min-width: 10px;
+          width: 100%;
+          display: flex;
+          margin-bottom: 20px;
+
+          img {
+            height: 19px;
+            margin-top: 19.5px;
+            margin-left: -40px;
+          }
+        }
+      }
+      .long-textbox {
+        height: 192px;
+
+        .long-text {
+          height: 100%;
+          width: 100%;
+          font-family: $font-roboto;
+          font-size: 18px;
+          display: flex;
+          text-align: top;
+          padding-top: 20px;
+        }
+      }
+
+      .submit-button {
+        width: 100%;
+        margin: 15px 0px;
+        height: 60px;
+        background-color: $site-blue;
+        border: none;
+        font-size: 15px;
+        color: $site-white;
+        text-transform: uppercase;
+        border-radius: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+.about-section {
+  width: 100%;
+
+  .about-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include center-content(80%);
+    height: 100%;
+    // background-color: lightblue;
+
+    .about-main {
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      justify-content: space-around;
+      margin-top: 70px;
+      min-height: 200px;
+      text-align: left;
+      color: $site-black;
+
+      h1 {
+        font-family: $font-roboto;
+        font-size: 60px;
+        font-weight: 100;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+      }
+
+      .title-underline {
+        height: 2px;
+        background-color: $site-black;
+        width: 171px;
+        margin: -5px 0 0;
+      }
+
+      p {
+        font-family: $font-lato;
+        font-size: 16px;
+        margin: 25px 0 45px;
+      }
+    }
+  }
+  .about-body {
+    @include center-content(80%);
+    margin: 0 auto;
+    //   background-color: bisque;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background-color: lightgreen;
+
+    h2 {
+      font-family: $font-roboto;
+      font-size: 40px;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+    .title-underline {
+      height: 2px;
+      background-color: $site-black;
+      width: 255px;
+      margin: 0px 0 0;
+    }
+
+    .quotes-container {
+      width: 80%;
+      max-width: 722px;
+      // background-color: antiquewhite;
+      margin-top: 30px;
+
+      .client-quote {
+        height: 150px;
+        //   width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+
+        .quote-pic {
+          height: 150px;
+          width: 260px;
+          // background-color: red;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .miranda {
+          background-image: url("../images/about-client-01.jpg");
+        }
+        .johnathan {
+          background-image: url("../images/about-client-02.jpg");
+        }
+
+        .quote-text-container {
+          // background-color: lightsalmon;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 432px;
+          margin-left: 30px;
+
+          .quote-text {
+            max-width: 385px;
+            font-family: $font-lato;
+            font-size: 16px;
+            font-style: italic;
+          }
+          .quote-author {
+            width: 100%;
+            text-align: right;
+            margin: auto auto 0px auto;
+            font-family: $font-lato;
+            color: $site-blue;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    .about-top {
+      .about-main {
+        h1 {
+        }
+
+        .title-underline {
+        }
+
+        p {
+        }
+      }
+    }
+    .about-body {
+      @include center-content(80%);
+      margin: 0 auto;
+      //   background-color: bisque;
+      margin: 0 auto 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // background-color: lightgreen;
+
+      h2 {
+        font-family: $font-roboto;
+        font-size: 40px;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+      }
+      .title-underline {
+        height: 2px;
+        background-color: $site-black;
+        width: 255px;
+        margin: 0px 0 0;
+      }
+
+      .quotes-container {
+        width: 100%;
+        // background-color: antiquewhite;
+        margin-top: 30px;
+
+        .client-quote {
+          min-height: 150px;
+
+          .quote-pic {
+          }
+
+          .quote-text-container {
+            // background-color: lightsalmon;
+
+            .quote-text {
+            }
+            .quote-author {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .about-section {
+    .about-top {
+      .about-main {
+        h1 {
+        }
+
+        .title-underline {
+        }
+
+        p {
+        }
+      }
+    }
+    .about-body {
+      @include center-content(80%);
+      margin: 0 auto;
+      //   background-color: bisque;
+      margin: 0 auto 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // background-color: lightgreen;
+
+      h2 {
+        font-family: $font-roboto;
+        font-size: 40px;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+      }
+      .title-underline {
+        height: 2px;
+        background-color: $site-black;
+        width: 255px;
+        margin: 0px 0 0;
+      }
+
+      .quotes-container {
+        width: 100%;
+        // background-color: antiquewhite;
+        margin-top: 30px;
+
+        .client-quote {
+          flex-direction: column;
+          min-height: 300px;
+
+          .quote-pic {
+            width: 260px;
+            height: 150px;
+          }
+
+          .quote-text-container {
+            margin: 10px auto;
+
+            .quote-text {
+            }
+            .quote-author {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
