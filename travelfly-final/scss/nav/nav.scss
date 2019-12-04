@@ -1,5 +1,7 @@
 .home-nav {
   width: 80%;
+  @include center-content();
+  position: relative;
   height: 92.5px;
   border-bottom: solid 2px $site-white;
   display: flex;
@@ -45,7 +47,8 @@
   }
 }
 .site-nav {
-  @include center-content(80%);
+  width: 80%;
+  @include center-content();
   height: 92.5px;
   border-bottom: solid 2px $site-black;
   display: flex;
@@ -109,7 +112,17 @@
         }
 
         a {
-          margin: 15px auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          width: 100%;
+          margin: 0;
+          color: $site-white;
+
+          &:hover {
+            background-color: rgba(#222, 0.8);
+          }
         }
       }
       .navicon {
@@ -142,20 +155,33 @@
         }
 
         a {
-          margin: 15px auto;
-          color: $site-black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          width: 100%;
+          margin: 0;
+          color: $site-white;
+
+          &:hover {
+            background-color: rgba(#222, 0.8);
+          }
         }
       }
       .navicon {
         display: block;
         margin-top: -250px;
         color: $site-black;
+
+        &:hover {
+          color: $site-white;
+        }
       }
 
       &:hover {
         .links {
           display: flex;
-          background-color: rgba($site-blue, 0.9);
+          background-color: rgba(#000, 0.8);
         }
       }
     }

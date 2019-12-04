@@ -36,19 +36,7 @@
         }
       }
       .tour-button {
-        height: 40px;
-        width: 133px;
-        background-color: $site-blue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-size: 15px;
-
-        &:hover {
-          cursor: pointer;
-        }
+        @include site-button();
       }
     }
     .israel {
@@ -57,7 +45,7 @@
           rgba($site-black, 0.5),
           rgba($site-black, 0.5)
         ),
-        url('../images/tour/tour-01.jpg');
+        url("../images/tour/tour-01.jpg");
     }
     .usa {
       background-image: linear-gradient(
@@ -65,7 +53,7 @@
           rgba($site-black, 0.5),
           rgba($site-black, 0.5)
         ),
-        url('../images/tour/tour-02.jpg');
+        url("../images/tour/tour-02.jpg");
     }
     .australia {
       background-image: linear-gradient(
@@ -73,7 +61,7 @@
           rgba($site-black, 0.5),
           rgba($site-black, 0.5)
         ),
-        url('../images/tour/tour-03.jpg');
+        url("../images/tour/tour-03.jpg");
     }
   }
 
@@ -111,7 +99,7 @@
         select {
           width: 103px;
           height: 100%;
-          background: url('../images/down-arrow.svg');
+          background: url("../images/down-arrow.svg");
           background-size: 20px;
           background-repeat: no-repeat;
           background-position: right;

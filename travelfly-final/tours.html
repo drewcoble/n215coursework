@@ -17,21 +17,22 @@
     <title>Travel-Fly | TOURS</title>
   </head>
   <body>
-    <div class="tours-section">
-      <nav class="site-nav">
-        <img src="images/logo/logo-black.svg" alt="" />
-        <div class="link-wrap">
-          <div class="links">
-            <a href="index.html">home</a><span> | </span>
-            <a href="about.html">about</a><span> | </span>
-            <a href="tours.html">tours</a><span> | </span>
-            <a href="offers.html">special offers</a><span> | </span>
-            <a href="blog.html">blog</a><span> | </span>
-            <a href="contact.html">contact</a>
-          </div>
-          <div class="navicon"><i class="fas fa-bars"></i></div>
+    <nav class="site-nav">
+      <img src="images/logo/logo-black.svg" alt="" />
+      <div class="link-wrap">
+        <div class="links">
+          <a href="index.html">home</a><span> | </span>
+          <a href="about.html">about</a><span> | </span>
+          <a href="tours.html">tours</a><span> | </span>
+          <a href="offers.html">special offers</a><span> | </span>
+          <a href="blog.html">blog</a><span> | </span>
+          <a href="contact.html">contact</a>
         </div>
-      </nav>
+        <div class="navicon"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div class="tours-section">
       <div class="tours-header">
         <h1>tours:</h1>
       </div>
@@ -41,79 +42,83 @@
             <h1 class="tour-title">Israel</h1>
             <p class="tour-subtitle">from $1000</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <a
+            href="tourpackage.html"
+            class="tour-button"
+            onclick="showTour('israel')"
+            >learn more</a
+          >
         </div>
         <div class="tour usa">
           <div class="tour-title-wrap">
             <h1 class="tour-title">U.S.A.</h1>
             <p class="tour-subtitle">from $1500</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="usa">learn more</div>
         </div>
         <div class="tour australia">
           <div class="tour-title-wrap">
             <h1 class="tour-title">Australia</h1>
             <p class="tour-subtitle">from $1800</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="aus">learn more</div>
         </div>
         <div class="tour newzealand">
           <div class="tour-title-wrap">
             <h1 class="tour-title">New Zealand</h1>
             <p class="tour-subtitle">from $1200</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="nz">learn more</div>
         </div>
         <div class="tour france">
           <div class="tour-title-wrap">
             <h1 class="tour-title">France</h1>
             <p class="tour-subtitle">from $2500</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="france">learn more</div>
         </div>
         <div class="tour egypt">
           <div class="tour-title-wrap">
             <h1 class="tour-title">Egypt</h1>
             <p class="tour-subtitle">from $900</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="egypt">learn more</div>
         </div>
         <div class="tour japan">
           <div class="tour-title-wrap">
             <h1 class="tour-title">Japan</h1>
             <p class="tour-subtitle">from $1300</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="japan">learn more</div>
         </div>
         <div class="tour canada">
           <div class="tour-title-wrap">
             <h1 class="tour-title">Canada</h1>
             <p class="tour-subtitle">from $2000</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="canada">learn more</div>
         </div>
         <div class="tour uae">
           <div class="tour-title-wrap">
             <h1 class="tour-title">U.A.E.</h1>
             <p class="tour-subtitle">from $3000</p>
           </div>
-          <div class="tour-button">learn more</div>
+          <div class="tour-button" id="uae">learn more</div>
         </div>
       </section>
     </div>
 
     <section class="footer">
-      <div class="footer-width-fixer">
-        <div class="footer-content">
-          <img src="images/logo/logo-white.svg" alt="" />
-          <p>Copyright 2019 travel-fly. All rights reserved</p>
-          <div class="social-links">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter-square"></i>
-          </div>
+      <div class="footer-content">
+        <img src="images/logo/logo-white.svg" alt="" />
+        <p>Copyright 2019 travel-fly. All rights reserved</p>
+        <div class="social-links">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
         </div>
       </div>
     </section>
+    <script src="app/app.js"></script>
   </body>
 </html>

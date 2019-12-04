@@ -3,42 +3,37 @@
   height: 100px;
   background-color: $site-blue;
 
-  .footer-width-fixer {
+  .footer-content {
+    // background-color: green;
+    width: 80%;
     @include center-content();
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .footer-content {
-      // background-color: green;
-      width: 80%;
-      margin: 0 auto;
-      height: 100%;
+    p {
+      color: $site-white;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .logo {
+      height: 42px;
+      width: 96px;
+    }
+
+    .social-links {
       display: flex;
+      width: 110px;
       justify-content: space-between;
-      align-items: center;
 
-      p {
-        color: $site-white;
-        font-size: 12px;
-        margin: 0;
-      }
+      i {
+        font-size: 23px;
+        color: white;
 
-      .logo {
-        height: 42px;
-        width: 96px;
-      }
-
-      .social-links {
-        display: flex;
-        width: 110px;
-        justify-content: space-between;
-
-        i {
-          font-size: 23px;
-          color: white;
-
-          &:hover {
-            cursor: pointer;
-          }
+        &:hover {
+          cursor: pointer;
         }
       }
     }

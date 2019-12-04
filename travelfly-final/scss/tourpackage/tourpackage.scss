@@ -1,0 +1,180 @@
+.package-section {
+  width: 80%;
+  @include center-content();
+
+  .package-header {
+    // background-color: burlywood;
+    height: 413px;
+    margin: 50px auto;
+    padding: 30px 0px 0px 30px;
+    background: linear-gradient(
+        to right,
+        rgba($site-black, 0.5),
+        rgba($site-black, 0.5)
+      ),
+      url("../images/tour/tour-01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $font-roboto;
+
+    h1 {
+      color: $site-white;
+      font-size: 80px;
+      font-weight: 100;
+    }
+    p {
+      color: $site-white;
+      font-size: 30px;
+      font-weight: 100;
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  .package-body {
+    // background-color: skyblue;
+    margin: 0 auto;
+
+    .packagePictureContainer {
+      width: 100%;
+      min-height: 347px;
+      //   background-color: lightgreen;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .packagePicture {
+        height: 347px;
+        width: 298px;
+        // background-color: lightcoral;
+      }
+      .israel01 {
+        background-image: url("../images/tour/tour-israel/israel-tour-01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .israel02 {
+        background-image: url("../images/tour/tour-israel/israel-tour-02.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .israel03 {
+        background-image: url("../images/tour/tour-israel/israel-tour-03.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .packageDay {
+      margin-bottom: 70px;
+      //   background-color: aquamarine;
+      min-height: 190px;
+
+      h1 {
+        width: 215px;
+        font-family: $font-roboto;
+        font-size: 60px;
+        font-weight: 100;
+        border-bottom: 2px solid $site-black;
+      }
+      p {
+        font-size: 16px;
+        font-family: $font-lato;
+      }
+    }
+    .bookButton {
+      @include site-button();
+      margin: 0 auto 90px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .package-section {
+    .package-header {
+      // background-color: burlywood;
+      padding: 10px;
+
+      h1 {
+        color: $site-white;
+        font-size: 50px;
+        font-weight: 100;
+      }
+      p {
+        color: $site-white;
+        font-size: 25px;
+        font-weight: 100;
+        margin: 0;
+        text-align: right;
+      }
+    }
+
+    .package-body {
+      // background-color: skyblue;
+
+      .packagePictureContainer {
+        width: 100%;
+        min-height: 347px;
+        //   background-color: lightgreen;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .packagePicture {
+          height: 150px;
+          width: 100%;
+          margin-bottom: 20px;
+          // background-color: lightcoral;
+        }
+        .israel01 {
+          background-image: url("../images/tour/tour-israel/israel-tour-01.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .israel02 {
+          background-image: url("../images/tour/tour-israel/israel-tour-02.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .israel03 {
+          background-image: url("../images/tour/tour-israel/israel-tour-03.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .packageDay {
+        margin-bottom: 70px;
+        //   background-color: aquamarine;
+        min-height: 190px;
+
+        h1 {
+          width: 100px;
+          font-family: $font-roboto;
+          font-size: 30px;
+          font-weight: 100;
+          border-bottom: 2px solid $site-black;
+        }
+        p {
+          font-size: 16px;
+          font-family: $font-lato;
+        }
+      }
+      .bookButton {
+        @include site-button();
+        margin: 0 auto 90px;
+      }
+    }
+  }
+}

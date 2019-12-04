@@ -1,0 +1,134 @@
+.offers-section {
+  width: 80%;
+  @include center-content();
+  //   background-color: beige;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: $font-roboto;
+    margin-bottom: 0;
+  }
+  .main-title-underline {
+    height: 2px;
+    width: 220px;
+    background-color: $site-black;
+    margin-bottom: 20px;
+  }
+
+  .special-offer {
+    display: flex;
+    // background-color: lightblue;
+    margin: 30px 0;
+
+    .offer-picture {
+      height: 287px;
+      width: 199px;
+      //   background-color: lightgreen;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .offer-01 {
+      background-image: url("../images/special-offer-01.jpg");
+    }
+    .offer-02 {
+      background-image: url("../images/special-offer-02.jpg");
+    }
+
+    .offer-info {
+      width: 450px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-family: $font-roboto;
+        font-size: 30px;
+        font-weight: 100;
+
+        span {
+          font-size: 20px;
+          color: $site-orange;
+          text-transform: lowercase;
+          margin: 0 0 10px;
+        }
+      }
+
+      p {
+        font-family: $font-lato;
+        font-weight: 700;
+        font-size: 16px;
+        max-width: 290px;
+      }
+
+      .title-underline {
+        height: 2px;
+        width: 60%;
+        background-color: $site-black;
+      }
+    }
+    .button {
+      @include site-button();
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .offers-section {
+    h1 {
+    }
+    .main-title-underline {
+    }
+
+    .special-offer {
+      flex-direction: column;
+
+      .offer-picture {
+        height: 250px;
+        width: 100%;
+      }
+
+      .offer-01 {
+      }
+      .offer-02 {
+      }
+
+      .offer-info {
+        width: 100%;
+        margin-left: 0px;
+
+        h1 {
+          margin-top: 10px;
+          margin-bottom: 0px;
+
+          span {
+            display: block;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          margin-top: 0px;
+        }
+
+        .title-underline {
+          display: none;
+        }
+      }
+      .button {
+        margin-top: 10px;
+      }
+    }
+  }
+}

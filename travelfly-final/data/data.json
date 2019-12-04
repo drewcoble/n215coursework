@@ -1,0 +1,47 @@
+{
+  "israel": {
+    "name": "Israel",
+    "price": 1000,
+    "bgPic": "tour-01.jpg"
+  },
+  "usa": {
+    "name": "U.S.A.",
+    "price": 1500,
+    "bgPic": "tour-02.jpg"
+  },
+  "aus": {
+    "name": "Australia",
+    "price": 1800,
+    "bgPic": "tour-03.jpg"
+  },
+  "nz": {
+    "name": "New Zealand",
+    "price": 1200,
+    "bgPic": "tour-04.jpg"
+  },
+  "france": {
+    "name": "France",
+    "price": 2500,
+    "bgPic": "tour-05.jpg"
+  },
+  "egypt": {
+    "name": "Egypt",
+    "price": 900,
+    "bgPic": "tour-06.jpg"
+  },
+  "japan": {
+    "name": "Japan",
+    "price": 1300,
+    "bgPic": "tour-07.jpg"
+  },
+  "canada": {
+    "name": "Canada",
+    "price": 2000,
+    "bgPic": "tour-08.jpg"
+  },
+  "uae": {
+    "name": "U.A.E.",
+    "price": 3000,
+    "bgPic": "tour-09.jpg"
+  }
+}
