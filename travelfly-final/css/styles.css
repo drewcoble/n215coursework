@@ -826,9 +826,26 @@ p {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg"); }
 
 @media (max-width: 838px) {
-  .tours-section .tours-body .tour {
-    height: 236px;
-    width: 304px; } }
+  .tours-section .tours-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 30px; }
+    .tours-section .tours-body .tour {
+      width: 280px;
+      height: 216px;
+      margin-bottom: 20px; } }
 
 .about-section {
   max-width: 1280px;
@@ -1030,13 +1047,6 @@ p {
     height: 413px;
     margin: 50px auto;
     padding: 30px 0px 0px 30px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-01.jpg");
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1073,21 +1083,6 @@ p {
       .package-section .package-body .packagePictureContainer .packagePicture {
         height: 347px;
         width: 298px; }
-      .package-section .package-body .packagePictureContainer .israel01 {
-        background-image: url("../images/tour/tour-israel/israel-tour-01.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      .package-section .package-body .packagePictureContainer .israel02 {
-        background-image: url("../images/tour/tour-israel/israel-tour-02.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      .package-section .package-body .packagePictureContainer .israel03 {
-        background-image: url("../images/tour/tour-israel/israel-tour-03.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
     .package-section .package-body .packageDay {
       margin-bottom: 70px;
       min-height: 190px; }
@@ -1155,21 +1150,6 @@ p {
       height: 150px;
       width: 100%;
       margin-bottom: 20px; }
-    .package-section .package-body .packagePictureContainer .israel01 {
-      background-image: url("../images/tour/tour-israel/israel-tour-01.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .package-section .package-body .packagePictureContainer .israel02 {
-      background-image: url("../images/tour/tour-israel/israel-tour-02.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .package-section .package-body .packagePictureContainer .israel03 {
-      background-image: url("../images/tour/tour-israel/israel-tour-03.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
   .package-section .package-body .packageDay {
     margin-bottom: 70px;
     min-height: 190px; }
@@ -1411,3 +1391,359 @@ p {
       .blog-section .blog-post .blog-content .blog-text {
         width: 100%;
         max-width: 380px; } }
+
+.contact-section {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto; }
+  .contact-section h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: 190px;
+    margin-top: 50px; }
+  .contact-section .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px; }
+    .contact-section .contact-container .map-container {
+      min-width: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .contact-section .contact-container .map-container .map {
+        width: 100%;
+        height: 442px;
+        background: url("../images/contact-map.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .contact-section .contact-container .map-container .map-info {
+        width: 100%;
+        margin: 30px 0;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 2px;
+        line-height: 23px; }
+    .contact-section .contact-container .contact-form {
+      height: 522px;
+      width: 100%;
+      margin-left: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 2px;
+      font-size: 16px; }
+      .contact-section .contact-container .contact-form input {
+        height: 60px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 21px;
+        padding-left: 20px;
+        font-size: 16px; }
+      .contact-section .contact-container .contact-form textarea {
+        height: 199px;
+        background-color: #f5f5f5;
+        border: none;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-family: "Lato", sans-serif;
+        font-size: 16px; }
+      .contact-section .contact-container .contact-form .submit-div {
+        height: 60px;
+        width: 167px;
+        background-color: #79addc;
+        color: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-transform: uppercase; }
+        .contact-section .contact-container .contact-form .submit-div:hover {
+          cursor: pointer; }
+
+@media (max-width: 1000px) {
+  .contact-section .contact-container .map-container {
+    min-width: 50%; } }
+
+@media (max-width: 700px) {
+  .contact-section .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .contact-section .contact-container .map-container {
+      width: 100%;
+      margin-top: 40px; }
+      .contact-section .contact-container .map-container .map-info {
+        font-size: 16px;
+        font-weight: 400; }
+    .contact-section .contact-container .contact-form {
+      width: 100%;
+      margin-left: 0; } }
+
+.israel-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-01.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.israel01 {
+  background-image: url("../images/tour/tour-israel/israel-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.israel02 {
+  background-image: url("../images/tour/tour-israel/israel-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.israel03 {
+  background-image: url("../images/tour/tour-israel/israel-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.usa-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-02.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.usa01 {
+  background-image: url("../images/tour/tour-usa/usa-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.usa02 {
+  background-image: url("../images/tour/tour-usa/usa-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.usa03 {
+  background-image: url("../images/tour/tour-usa/usa-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aus-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-03.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aus01 {
+  background-image: url("../images/tour/tour-aus/aus-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aus02 {
+  background-image: url("../images/tour/tour-aus/aus-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aus03 {
+  background-image: url("../images/tour/tour-aus/aus-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nz-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-04.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-04.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-04.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nz01 {
+  background-image: url("../images/tour/tour-nz/nz-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nz02 {
+  background-image: url("../images/tour/tour-nz/nz-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nz03 {
+  background-image: url("../images/tour/tour-nz/nz-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.france-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-05.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-05.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-05.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-05.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.france01 {
+  background-image: url("../images/tour/tour-france/france-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.france02 {
+  background-image: url("../images/tour/tour-france/france-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.france03 {
+  background-image: url("../images/tour/tour-france/france-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.egypt-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-06.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-06.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-06.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-06.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.egypt01 {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.egypt02 {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.egypt03 {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.japan-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-07.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-07.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-07.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-07.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.japan01 {
+  background-image: url("../images/tour/tour-japan/japan-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.japan02 {
+  background-image: url("../images/tour/tour-japan/japan-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.japan03 {
+  background-image: url("../images/tour/tour-japan/japan-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.canada-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-08.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-08.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-08.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-08.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.canada01 {
+  background-image: url("../images/tour/tour-canada/canada-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.canada02 {
+  background-image: url("../images/tour/tour-canada/canada-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.canada03 {
+  background-image: url("../images/tour/tour-canada/canada-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.uae-header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/tour/tour-09.jpg");
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-09.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-09.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-09.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.uae01 {
+  background-image: url("../images/tour/tour-uae/uae-tour-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.uae02 {
+  background-image: url("../images/tour/tour-uae/uae-tour-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.uae03 {
+  background-image: url("../images/tour/tour-uae/uae-tour-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }

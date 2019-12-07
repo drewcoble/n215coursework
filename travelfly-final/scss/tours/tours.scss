@@ -144,9 +144,18 @@
 @media (max-width: 838px) {
   .tours-section {
     .tours-body {
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      //background-color: slateblue;
+      margin-top: 15px;
+      margin-bottom: 30px;
       .tour {
-        height: 236px;
-        width: 304px;
+        width: 280px;
+        height: 216px;
+        margin-bottom: 20px;
       }
     }
   }
